@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h2>Alerta de Faltas - {{BIMESTRE}}º Trimestre / {{ANO}}</h2>
+
+<p>Os alunos abaixo ultrapassaram o limite de faltas configurado para o período.</p>
+<p>Total de alunos notificados: {{TOTAL_ALUNOS}}</p>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Aluno</th>
+    <th>Total</th>
+    <th>Faltas</th>
+    <th>FJ</th>
+  </tr>
+  {{LINHAS_ALUNOS}}
+</table>
+
+<p><small>Este é um email automático do Sistema de Alerta de Faltas.</small></p>
+
+</body>
+</html>
